@@ -3,6 +3,7 @@
 #
 #   pixi run snakemake --cores 1                 everything: ENA download (4.4 GB), PEMA (hours), BLAST, pond table
 #   pixi run snakemake --cores 1 summary         only BLAST check + pond table and map, from the committed PEMA tables
+#   pixi run land-cover                          land cover around each pond (ESA WorldCover 2021), no account
 #
 # PEMA runs its own containers through Nextflow and rootless Podman (podman.config); needs pema/ (v3.0.0) and the
 # 12S_v200 reference in rdp_databases/ (README, "Install").
@@ -12,7 +13,7 @@ PEMA_OUT = [PEMA_TABLE, "results_all/asvs_representatives.fa", "results_all/asvs
 
 
 rule all:
-    input: "analysis/pond_table.tsv", "figures/ponds_edna_map.png"
+    input: "analysis/pond_table.tsv", "figures/ponds_edna_map.png", "analysis/landcover_vs_edna.json"
 
 
 rule summary:                    # from the committed PEMA tables: no download, no PEMA
@@ -40,3 +41,9 @@ rule pond_summary:
     input: PEMA_TABLE, "analysis/blast_check.tsv", "runs_all.tsv"
     output: "analysis/pond_table.tsv", "figures/ponds_edna_map.png"
     shell: "python scripts/pond_summary.py"
+
+
+rule land_cover:                 # ESA WorldCover 2021 (10 m, anonymous, Planetary Computer) on HEALPix depth 18 cells
+    input: "analysis/pond_table.tsv"
+    output: "analysis/pond_landcover.tsv", "analysis/landcover_vs_edna.json"
+    shell: "python scripts/land_cover.py"

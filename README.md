@@ -29,6 +29,25 @@ Site: <https://annefou.github.io/ankara-ponds-edna/>. Installation and running: 
 - Ponds without fish: 3.7 amphibian groups on average; with fish: 2.7.
 - Human DNA 20 % of reads (handling); livestock above 1 % of non-human reads in 8 ponds.
 
+## Land cover around the ponds (4 November 2026)
+
+`scripts/land_cover.py` (rule `land_cover`, no account): ESA WorldCover 10 m 2021 v200 (CC BY 4.0) binned onto
+HEALPix depth-18 cells (~25 m, healpix-geo WGS84, NESTED) with healpix-resample's ConservativeResampler; shares over
+the cells whose centre lies within 100 m of each pond (the PONDERFUL paper's radius) and 250 m. Checked against
+the 10 m pixels counted directly: median difference 0.4 percentage points (at most 2.9). Results:
+`analysis/pond_landcover.tsv`, `analysis/landcover_vs_edna.json`.
+
+- Within 100 m: cropland median 16 % (0-81 %), grassland 68 %; 12 ponds have more than 25 % cropland.
+- No association between cropland and the number of amphibian groups (Spearman rho 0.07, p = 0.74; at 250 m
+  -0.18, p = 0.36). Ponds with fish have more cropland around them (median 17 % against 0 %), but not
+  significantly with 29 ponds (rank-sum p = 0.15).
+- WorldCover finds no water within 100 m of 16 ponds: most ponds are too small or too temporary for a 10 m annual
+  map, so pond area must come from the field data.
+- WorldCover's cropland is arable land; its grassland cannot separate improved from natural grassland, so neither is
+  the paper's land-use variable (improved grassland plus arable land, from field estimates). Compare with METU's
+  measured values when the PONDERFUL database opens (15 January 2027). Climate is not added: the ponds lie within
+  46 km of each other, too close for ERA5-Land (~9 km) or Climate DT (~6 km) to tell them apart.
+
 ## Nanopublication chain (draft)
 
 A FORRT chain is drafted in `nanopubs/drafts/` (`nanopubs/chain-draft.json`, `pixi run build-chain-draft`): the

@@ -1,0 +1,69 @@
+{
+ "source": "ESA WorldCover 10 m 2021 v200, tile N39E030 (CC BY 4.0), Planetary Computer",
+ "grid": "HEALPix depth 18 (~25 m), healpix-geo WGS84 NESTED, healpix-resample ConservativeResampler",
+ "ponds": 29,
+ "by_radius": {
+  "100 m": {
+   "cells_per_pond_median": 51,
+   "cropland_pct": {
+    "median": 15.9,
+    "min": 0.0,
+    "max": 81.3
+   },
+   "grassland_pct": {
+    "median": 68.2,
+    "min": 13.3,
+    "max": 100.0
+   },
+   "ponds_with_cropland_over_25pct": 12,
+   "spearman_cropland_vs_amphibian_groups": {
+    "rho": 0.07,
+    "p": 0.735
+   },
+   "spearman_grassland_vs_amphibian_groups": {
+    "rho": 0.18,
+    "p": 0.337
+   },
+   "cropland_median_fish_vs_no_fish": [
+    17.2,
+    0.0
+   ],
+   "mannwhitney_cropland_fish_vs_no_fish_p": 0.151
+  },
+  "250 m": {
+   "cells_per_pond_median": 318,
+   "cropland_pct": {
+    "median": 13.6,
+    "min": 0.0,
+    "max": 49.7
+   },
+   "grassland_pct": {
+    "median": 63.6,
+    "min": 14.2,
+    "max": 100.0
+   },
+   "ponds_with_cropland_over_25pct": 11,
+   "spearman_cropland_vs_amphibian_groups": {
+    "rho": -0.18,
+    "p": 0.356
+   },
+   "spearman_grassland_vs_amphibian_groups": {
+    "rho": 0.35,
+    "p": 0.067
+   },
+   "cropland_median_fish_vs_no_fish": [
+    15.5,
+    0.0
+   ],
+   "mannwhitney_cropland_fish_vs_no_fish_p": 0.152
+  }
+ },
+ "cropland_100m_by_site_median": {
+  "Akbas": 24.9,
+  "Alpagut": 24.299999999999997,
+  "Ayas Yolu": 0.0,
+  "Imrendi": 32.2,
+  "Karacaoren": 13.049999999999999,
+  "Sorgun": 0.8
+ }
+}

@@ -11,10 +11,21 @@ matplotlib = ">=3.11.2,<4"
 pandas = ">=3.1.0,<4"
 snakemake-minimal = ">=8"
 "ruamel.yaml" = "*"            # scripts/build_chain_draft.py reads CITATION.cff
+scipy = "*"                    # rank tests in scripts/land_cover.py
+pyproj = "*"
+rasterio = "*"                 # ESA WorldCover COGs (windowed HTTP reads)
+shapely = ">=2.0"
+pystac-client = "*"            # Planetary Computer STAC
+planetary-computer = "*"       # anonymous URL signing
+healpix-geo = ">=0.4.1"        # HEALPix on the WGS84 ellipsoid, NESTED
+pytorch-cpu = "*"              # backend of healpix-resample
 jupytext = "*"
 jupyterlab = "*"
 nbclient = "*"
 ipykernel = "*"
+
+[pypi-dependencies]
+healpix-resample = "*"         # GRID4EARTH resamplers (ConservativeResampler for the land-cover classes)
 
 [feature.docs.dependencies]
 mystmd = "*"
@@ -27,4 +38,5 @@ docs = { features = ["docs"], solve-group = "default" }
 summary = "snakemake --cores 1 summary --forcerun pond_summary"   # pond table and map from the committed PEMA and BLAST tables
 pema-test = "bash run_pema_test.sh"
 build-chain-draft = "python scripts/build_chain_draft.py"
+land-cover = "python scripts/land_cover.py"
 book = "jupytext --to notebook notebooks/*.py && jupyter execute --inplace notebooks/*.ipynb"
