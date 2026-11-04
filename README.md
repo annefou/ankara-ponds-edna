@@ -48,6 +48,30 @@ the 10 m pixels counted directly: median difference 0.4 percentage points (at mo
   measured values when the PONDERFUL database opens (15 January 2027). Climate is not added: the ponds lie within
   46 km of each other, too close for ERA5-Land (~9 km) or Climate DT (~6 km) to tell them apart.
 
+## Streams, villages and pond permanence (4 November 2026)
+
+**Can Sentinel-2 tell permanent from temporary ponds?** Not with the public coordinates.
+`scripts/sentinel2_visibility.py` (rule `s2_visibility`): on two clear scenes of the sampling period (26 and 31 May
+2022), when every pond held water, only 6-7 of the 29 ponds show open water (NDWI > 0 on at least 3 pixels) within
+30 m of their coordinates, 2-4 with MNDWI, and none of the 6 ponds without fish (`analysis/s2_visibility.tsv`).
+Ponds are small, partly under vegetation, or the coordinates miss the water (TR2, TR5: nearest open water
+150-180 m away, possibly another pond). No permanence value is derived; it needs METU's pond outlines or exact
+coordinates (PONDERFUL database, 15 January 2027).
+
+**Distance to streams and villages** (`scripts/osm_context.py`, rule `osm_context`; OpenStreetMap, ODbL, Overpass
+extract of 2026-11-04 09:56 UTC; UTM 36N distances; `analysis/pond_osm.tsv`, `analysis/osm_vs_edna.json`):
+
+- Ponds with fish lie closer to a mapped stream, ditch or canal than ponds without (median 193 m against 3,562 m,
+  rank-sum p = 0.009), and closer to a village (882 against 1,601 m, p = 0.006); the same for the topmouth gudgeon
+  (157 against 2,959 m from a stream, p = 0.005). Roads, tracks and other mapped water show no difference.
+- The difference is between sites, not within them: Alpagut and İmrendi lie 13-230 m from streams and all their
+  ponds have fish; Ayaş Yolu lies ~5 km from any mapped stream and 2 of its 3 ponds have none; within Karacaören there
+  is no pattern; Akbaş, 2.1 km from a stream, has fish in all 4 ponds (stocking?). At site level (6 sites) the
+  correlation between fish share and stream distance is rho = -0.58, p = 0.23. A lead to test with METU's field data
+  (connections, stocking), not a finding.
+- Distances use the public coordinates, which can be ~200 m off; only differences of several hundred metres are
+  read. OSM completeness for small streams and tracks is unknown; 11 of the 29 ponds are mapped in OSM.
+
 ## Nanopublication chain (draft)
 
 A FORRT chain is drafted in `nanopubs/drafts/` (`nanopubs/chain-draft.json`, `pixi run build-chain-draft`): the

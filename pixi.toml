@@ -39,4 +39,6 @@ summary = "snakemake --cores 1 summary --forcerun pond_summary"   # pond table a
 pema-test = "bash run_pema_test.sh"
 build-chain-draft = "python scripts/build_chain_draft.py"
 land-cover = "python scripts/land_cover.py"
+osm-context = "python scripts/osm_context.py"
+s2-visibility = "python scripts/sentinel2_visibility.py"
 book = "jupytext --to notebook notebooks/*.py && jupyter execute --inplace notebooks/*.ipynb"

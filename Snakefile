@@ -13,7 +13,8 @@ PEMA_OUT = [PEMA_TABLE, "results_all/asvs_representatives.fa", "results_all/asvs
 
 
 rule all:
-    input: "analysis/pond_table.tsv", "figures/ponds_edna_map.png", "analysis/landcover_vs_edna.json"
+    input: "analysis/pond_table.tsv", "figures/ponds_edna_map.png", "analysis/landcover_vs_edna.json",
+           "analysis/osm_vs_edna.json", "analysis/s2_visibility.tsv"
 
 
 rule summary:                    # from the committed PEMA tables: no download, no PEMA
@@ -47,3 +48,15 @@ rule land_cover:                 # ESA WorldCover 2021 (10 m, anonymous, Planeta
     input: "analysis/pond_table.tsv"
     output: "analysis/pond_landcover.tsv", "analysis/landcover_vs_edna.json"
     shell: "python scripts/land_cover.py"
+
+
+rule osm_context:                # distances to streams, water, roads, villages (OpenStreetMap, Overpass API, no account)
+    input: "analysis/pond_table.tsv"
+    output: "analysis/pond_osm.tsv", "analysis/osm_vs_edna.json"
+    shell: "python scripts/osm_context.py"
+
+
+rule s2_visibility:              # can Sentinel-2 see the ponds at their public coordinates? (no account)
+    input: "analysis/pond_table.tsv"
+    output: "analysis/s2_visibility.tsv"
+    shell: "python scripts/sentinel2_visibility.py"

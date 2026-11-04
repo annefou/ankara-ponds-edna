@@ -26,3 +26,6 @@ _build/
 notebooks/*.ipynb
 notebooks/.ipynb_checkpoints/
 paper/
+work_osm/
+.snakemake/
+__pycache__/

@@ -1,0 +1,65 @@
+{
+ "source": "OpenStreetMap (ODbL), Overpass API, OSM base 2026-11-04T09:56:21Z",
+ "ponds": 29,
+ "ponds_mapped_in_osm": 11,
+ "position_uncertainty_note": "public coordinates miss the open water of most ponds by up to ~200 m",
+ "fish_present": 23,
+ "topmouth_gudgeon_present": 19,
+ "tests": {
+  "dist_stream_m": {
+   "median_all": 532.0,
+   "min": 13.0,
+   "max": 5434.0,
+   "median_fish_present": 193.0,
+   "median_fish_absent": 3561.5,
+   "mannwhitney_p_fish": 0.009,
+   "median_topmouth_gudgeon_present": 157.0,
+   "median_topmouth_gudgeon_absent": 2959.0,
+   "mannwhitney_p_topmouth_gudgeon": 0.005
+  },
+  "dist_other_water_m": {
+   "median_all": 232.0,
+   "min": 68.0,
+   "max": 3016.0,
+   "median_fish_present": 195.0,
+   "median_fish_absent": 777.5,
+   "mannwhitney_p_fish": 0.254,
+   "median_topmouth_gudgeon_present": 190.0,
+   "median_topmouth_gudgeon_absent": 777.5,
+   "mannwhitney_p_topmouth_gudgeon": 0.094
+  },
+  "dist_road_m": {
+   "median_all": 322.0,
+   "min": 17.0,
+   "max": 1766.0,
+   "median_fish_present": 269.0,
+   "median_fish_absent": 383.5,
+   "mannwhitney_p_fish": 0.451,
+   "median_topmouth_gudgeon_present": 242.0,
+   "median_topmouth_gudgeon_absent": 383.5,
+   "mannwhitney_p_topmouth_gudgeon": 0.215
+  },
+  "dist_track_m": {
+   "median_all": 830.0,
+   "min": 48.0,
+   "max": 2117.0,
+   "median_fish_present": 862.0,
+   "median_fish_absent": 685.0,
+   "mannwhitney_p_fish": 0.747,
+   "median_topmouth_gudgeon_present": 862.0,
+   "median_topmouth_gudgeon_absent": 685.0,
+   "mannwhitney_p_topmouth_gudgeon": 1.0
+  },
+  "dist_village_m": {
+   "median_all": 1161.0,
+   "min": 352.0,
+   "max": 2539.0,
+   "median_fish_present": 882.0,
+   "median_fish_absent": 1600.5,
+   "mannwhitney_p_fish": 0.006,
+   "median_topmouth_gudgeon_present": 822.0,
+   "median_topmouth_gudgeon_absent": 1422.5,
+   "mannwhitney_p_topmouth_gudgeon": 0.01
+  }
+ }
+}

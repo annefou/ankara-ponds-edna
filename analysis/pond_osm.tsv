@@ -1,0 +1,30 @@
+pond	site	osm_maps_the_pond	dist_stream_m	dist_other_water_m	dist_road_m	dist_track_m	dist_village_m
+TR1	Alpagut	False	13	107	449	945	512
+TR2	Alpagut	False	13	84	471	969	486
+TR3	Alpagut	False	25	76	458	982	473
+TR4	Alpagut	True	157	68	333	1102	352
+TR5	Alpagut	False	229	190	367	862	538
+TR6	Alpagut	False	214	165	529	1092	647
+TR7	Alpagut	True	178	83	348	1650	356
+TR8	Alpagut	False	62	117	720	2117	822
+TR9	Imrendi	True	147	89	328	78	1525
+TR10	Imrendi	True	125	98	242	146	1637
+TR11	Imrendi	True	193	91	640	296	843
+TR12	Akbas	False	2715	1808	1766	1715	2539
+TR13	Akbas	False	1506	632	71	756	397
+TR15	Ayas Yolu	True	5434	1889	25	402	1679
+TR16	Ayas Yolu	False	5427	232	71	494	1733
+TR17	Ayas Yolu	False	4942	1164	322	830	1821
+TR18	Akbas	True	579	3016	269	109	882
+TR19	Sorgun	False	1467	609	445	979	1230
+TR20	Akbas	False	2794	1044	91	1069	1435
+TR21	Karacaoren	True	2058	596	129	494	1390
+TR22	Karacaoren	False	3298	150	75	1512	1377
+TR23	Karacaoren	True	3203	558	40	1420	1221
+TR24	Karacaoren	False	532	1850	608	540	1468
+TR25	Karacaoren	True	2865	626	128	545	1347
+TR26	Karacaoren	True	3825	946	1284	48	2333
+TR27	Sorgun	False	822	1909	17	246	1161
+TR28	Sorgun	False	90	2416	28	1051	550
+TR29	Sorgun	False	16	195	56	65	1116
+TR30	Sorgun	False	18	216	50	73	1138
