@@ -143,7 +143,7 @@ docker run --rm -v "$PWD/out:/out" ghcr.io/annefou/ankara-ponds-edna:latest \
 
 The default command is `pixi run summary` (pond table and map). PEMA is not run inside the image: it starts its own containers through
 Nextflow, so run the full Snakefile on the host. The image is published on GitHub's container registry with each
-release.
+release; the v0.1.0 image is archived on Zenodo (doi:10.5281/zenodo.23943318).
 
 ### What is not in git
 
