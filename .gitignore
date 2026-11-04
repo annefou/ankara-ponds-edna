@@ -1,0 +1,24 @@
+# Everything regenerated or downloaded stays out of git (see README "Reproduce"):
+.pixi/
+.apptainer_cache/
+reads_all/
+reads_test/
+work_all/
+work_test/
+results_test/
+# PEMA v3.0.0 (cloned from GitHub, commit 9b9e649), TRIDENT (not used), the 12S_v200 database (Zenodo record 23298141)
+pema/
+trident/
+rdp_databases/
+# PEMA intermediates; only the ASV tables, sequences and taxonomy are kept
+results_all/*
+!results_all/rdp_assignment/
+!results_all/asvs_contingency_table.tsv
+!results_all/asvs_contingency_hash.tsv
+!results_all/asvs_representatives.fa
+# logs and local helpers
+*.log
+.nextflow*
+.writetest
+START_FULL_RUN.txt
+clean_old_claude_scratch.sh

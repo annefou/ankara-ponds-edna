@@ -1,0 +1,102 @@
+ASV	reads	PEMA_taxonomy	NCBI_best	identity_pct	coverage_pct	NCBI_within_0.5pct	genus_agrees
+ASV_1	7258792	Eukaryota; Metazoa; Chordata; Mammalia; Primates; Hominidae; Homo; Homo sapiens	Homo sapiens	100.0	100	Homo sapiens	yes
+ASV_2	6489623	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Cyprinidae; Carassius; Carassius auratus	Carassius auratus	100.0	100	Carassius auratus; Carassius auratus suogu var.; Carassius gibelio; Cyprinus carpio; androgenetic Carassius auratus red var. x Megalobrama amblycephala; autodiploid Carassius auratus red var. x Megalobrama amblycephala	yes
+ASV_5	5321008	Eukaryota; Metazoa; Chordata	Triturus macedonicus	100.0	100	Triturus dobrogicus; Triturus karelinii; Triturus macedonicus	no
+ASV_7	4931555	Eukaryota; Metazoa; Chordata	Triturus macedonicus	100.0	100	Triturus dobrogicus; Triturus karelinii; Triturus macedonicus	no
+ASV_6	4852994	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Ranidae; Pelophylax; Pelophylax bedriagae	Pelophylax cerigensis	100.0	100	Pelophylax cerigensis	yes
+ASV_9	3757394	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Gobionidae; Pseudorasbora; Pseudorasbora parva	Pseudorasbora parva	100.0	100	Pseudorasbora parva	yes
+ASV_11	1193613	Eukaryota; Metazoa; Chordata; Mammalia; Perissodactyla; Equidae; Equus; Equus asinus	Equus asinus	100.0	99	Equus asinus	yes
+ASV_15	657946	Eukaryota; Metazoa; Chordata; Actinopteri; Atheriniformes; Atherinidae; Atherina; Atherina boyeri	Atherina boyeri	99.3	99	Atherina boyeri	yes
+ASV_18	643051	Eukaryota; Metazoa; Chordata	Ommatotriton vittatus	98.4	100	Ommatotriton vittatus	no
+ASV_16	618631	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Cyprinidae; Cyprinus; Cyprinus carpio	Cyprinus carpio	100.0	100	Carassius auratus; Cyprinus carpio; androgenetic Carassius auratus red var. x Megalobrama amblycephala	yes
+ASV_19	609248	Eukaryota; Metazoa; Chordata	Ommatotriton vittatus	98.4	100	Ommatotriton vittatus	no
+ASV_13	588312	Eukaryota; Metazoa; Chordata; Actinopteri	Pelobates fuscus	99.3	100	Pelobates fuscus; Pelobates fuscus fuscus	no
+ASV_14	579851	Eukaryota; Metazoa; Chordata	Pelobates fuscus	99.3	100	Pelobates fuscus; Pelobates fuscus fuscus	no
+ASV_21	414524	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes	Cobitis calderoni	97.9	100	Cobitis calderoni; Cobitis mellaria; Cobitis paludica; Cobitis taenia	no
+ASV_25	297988	Eukaryota; Metazoa; Chordata; Aves; Anseriformes; Anatidae	Tadorna variegata	100.0	100	Tadorna ferruginea; Tadorna sp. LShepherd-2024a; Tadorna tadorna; Tadorna tadornoides; Tadorna variegata	no
+ASV_24	297237	Eukaryota; Metazoa; Chordata; Amphibia; Caudata	Ommatotriton vittatus	100.0	100	Ommatotriton vittatus	no
+ASV_30	273920	Eukaryota; Metazoa; Chordata; Mammalia; Carnivora; Canidae; Canis; Canis lupus	Canis lupus familiaris	100.0	100	Canis lupus; Canis lupus familiaris	yes
+ASV_32	229497	Eukaryota; Metazoa; Chordata; Aves; Anseriformes; Anatidae; Anas; Anas crecca	Histrionicus histrionicus	100.0	100	Histrionicus histrionicus; Spatula querquedula; Spatula rhynchotis	no
+ASV_35	194930	Eukaryota; Metazoa; Chordata; Actinopteri; Esociformes; Esocidae; Esox	Esox lucius	100.0	100	Esox lucius	yes
+ASV_40	187151	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae; Bos; Bos taurus	Bos taurus	100.0	100	Bos grunniens; Bos indicus; Bos taurus	yes
+ASV_37	175711	Eukaryota; Metazoa; Chordata; Actinopteri; Esociformes; Esocidae; Esox; Esox lucius	Esox lucius	100.0	100	Esox lucius	yes
+ASV_36	174397	Unassigned	no hit				
+ASV_38	160492	Unassigned	no hit				
+ASV_41	116877	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Hylidae; Hyla; Hyla orientalis	Hyla orientalis	100.0	97	Hyla molleri; Hyla orientalis	yes
+ASV_44	100682	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae; Ovis; Ovis aries	Ovis nivicola	100.0	100	Ovis nivicola	yes
+ASV_45	76631	Eukaryota; Metazoa; Chordata; Mammalia	Homo sapiens	100.0	100	Homo sapiens; Nomascus leucogenys	no
+ASV_43	76459	Eukaryota; Metazoa; Chordata; Testudines	Emys orbicularis	100.0	100	Emys orbicularis	no
+ASV_47	67382	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Suidae; Sus; Sus scrofa	Sus scrofa	100.0	100	Sus scrofa	yes
+ASV_51	65443	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Cyprinidae	Luciobarbus guiraonis	100.0	100	Luciobarbus brachycephalus; Luciobarbus comizo; Luciobarbus esocinus; Luciobarbus graellsii; Luciobarbus guiraonis; Luciobarbus microcephalus; Luciobarbus steindachneri	no
+ASV_50	60057	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Tincidae; Tinca; Tinca tinca	Tinca tinca	100.0	100	Tinca tinca	yes
+ASV_60	56374	Eukaryota; Metazoa; Chordata	Homo sapiens	97.2	99	Homo sapiens	no
+ASV_66	53047	Eukaryota; Metazoa; Chordata; Mammalia; Primates; Hominidae	Pan troglodytes verus	100.0	100	Homo sapiens; Pan troglodytes ellioti; Pan troglodytes troglodytes; Pan troglodytes verus	no
+ASV_63	38574	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Bufonidae	Bufotes viridis	99.2	100	Bufotes pewzowi; Bufotes sitibundus; Bufotes viridis	no
+ASV_69	32842	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae; Capra; Capra hircus	Capra hircus	100.0	100	Capra hircus	yes
+ASV_88	28534	Eukaryota; Metazoa; Chordata	Bacillus cereus	100.0	56	Bacillus cereus; uncultured bacterium	no
+ASV_75	28128	Eukaryota; Metazoa; Chordata; Aves; Galliformes; Phasianidae; Gallus; Gallus gallus	Gallus gallus	100.0	100	Gallus gallus	yes
+ASV_71	28006	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae	Capra hircus	100.0	100	Capra hircus	no
+ASV_102	26502	Eukaryota; Metazoa; Chordata; Mammalia; Primates	Homo sapiens	100.0	100	Homo sapiens; Mus musculus musculus; eukaryotic synthetic construct	no
+ASV_99	25707	Unassigned	Brassica rapa	100.0	64	Anagnostidinema sp. LHM-J; Brassica oleracea; Brassica rapa; Desertifilum tharense; uncultured cyanobacterium	no
+ASV_118	22140	Eukaryota; Metazoa; Chordata; Aves; Passeriformes	Pastor roseus	100.0	99	Pastor roseus	no
+ASV_91	18927	Eukaryota; Metazoa; Chordata; Aves; Gruiformes; Rallidae; Gallinula; Gallinula chloropus	Gallinula chloropus	100.0	100	Gallinula chloropus	yes
+ASV_126	18073	Eukaryota; Metazoa; Chordata; Amphibia; Anura	Pelophylax cerigensis	95.6	100	Pelophylax cerigensis	no
+ASV_103	17154	Eukaryota; Metazoa; Chordata; Aves	Tachybaptus ruficollis	99.3	100	Tachybaptus ruficollis	no
+ASV_111	16188	Eukaryota	Ralstonia solanacearum	100.0	46	Bacteroides sp. DH3716P; Ralstonia solanacearum; Streptococcus parasuis; Xanthomonas citri pv. fuscans	no
+ASV_112	12565	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Nemacheilidae	Schistura yingjiangensis	97.9	100	Schistura reticulofasciata; Schistura yingjiangensis	no
+ASV_130	9915	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Ranidae; Pelophylax	Pelophylax cerigensis	96.3	100	Pelophylax cerigensis	yes
+ASV_156	6330	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Cyprinidae; Carassius	Carassius auratus suogu var.	97.9	100	Carassius auratus; Carassius auratus suogu var.; Carassius gibelio; Cyprinus carpio; androgenetic Carassius auratus red var. x Megalobrama amblycephala; autodiploid Carassius auratus red var. x Megalobrama amblycephala	yes
+ASV_163	5235	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Laniidae; Lanius; Lanius collurio	Lanius collurio	100.0	99	Lanius collurio	yes
+ASV_164	4845	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Turdidae; Turdus; Turdus philomelos	Turdus merula	100.0	99	Turdus atrogularis; Turdus cardis; Turdus eunomus; Turdus hortulorum; Turdus iliacus; Turdus merula; Turdus pallidus; Turdus philomelos	yes
+ASV_167	4389	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Hylidae; Hyla	Hyla orientalis	96.9	98	Hyla molleri; Hyla orientalis	yes
+ASV_177	3912	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Acheilognathidae; Rhodeus	Rhodeus amarus	100.0	100	Rhodeus amarus; Rhodeus sericeus	yes
+ASV_230	3854	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Ranidae	Pelophylax cerigensis	96.3	100	Pelophylax cerigensis	no
+ASV_204	3784	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla	Bos taurus	97.2	100	Bos taurus	no
+ASV_203	3092	Eukaryota; Metazoa; Chordata; Amphibia	Pelophylax bedriagae	94.1	100	Pelophylax bedriagae; Pelophylax cerigensis	no
+ASV_200	3069	Eukaryota; Metazoa; Chordata; Actinopteri; Perciformes; Percidae; Perca; Perca fluviatilis	Sander lucioperca	100.0	100	Perca fluviatilis; Sander lucioperca	yes
+ASV_228	2208	Eukaryota; Metazoa; Chordata; Aves; Anseriformes; Anatidae; Cygnus; Cygnus atratus	Anser anser	100.0	100	Anser anser	no
+ASV_259	1762	Eukaryota; Metazoa; Chordata; Actinopteri; Clupeiformes; Clupeidae; Sardina; Sardina pilchardus	Sardina pilchardus	100.0	100	Sardina pilchardus	yes
+ASV_265	1746	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Fringillidae	Emberiza elegans	100.0	99	Emberiza aureola; Emberiza elegans; Emberiza schoeniclus; Emberiza siemsseni; Emberiza sulphurata; Emberiza yessoensis yessoensis	no
+ASV_273	1634	Eukaryota; Metazoa; Chordata; Aves; Gruiformes; Rallidae; Fulica; Fulica americana	Fulica atra	100.0	99	Alopochen aegyptiaca; Fulica atra	yes
+ASV_301	1487	Eukaryota; Metazoa; Chordata; Actinopteri; Siluriformes; Siluridae; Silurus; Silurus glanis	Silurus glanis	100.0	100	Silurus glanis	yes
+ASV_366	1479	Eukaryota; Metazoa; Chordata; Aves; Columbiformes; Columbidae; Columba; Columba livia	Streptopelia decaocto	100.0	100	Columba livia; Columba rupestris; Streptopelia decaocto; Streptopelia decaocto decaocto	yes
+ASV_315	1228	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Gobionidae	Gnathopogon elongatus elongatus	97.9	101	Gnathopogon elongatus elongatus; Platysmacheilus longibarbatus	no
+ASV_426	1187	Eukaryota; Metazoa; Chordata; Mammalia; Carnivora	Canis lupus familiaris	97.9	100	Canis lupus familiaris	no
+ASV_415	993	Eukaryota; Metazoa; Chordata; Mammalia; Carnivora; Felidae; Felis; Felis catus	Felis catus	100.0	100	Felis catus; Felis margarita	yes
+ASV_447	981	Eukaryota; Metazoa; Chordata; Aves; Galliformes; Phasianidae	Gallus gallus	96.6	100	Gallus gallus	no
+ASV_393	909	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Suidae	Sus scrofa	97.2	100	Sus scrofa	no
+ASV_379	847	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Cervidae; Capreolus; Capreolus capreolus	Capreolus capreolus	100.0	100	Capreolus capreolus	yes
+ASV_522	533	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae; Capra	Capra hircus	97.2	100	Capra hircus	yes
+ASV_531	495	Eukaryota; Metazoa; Chordata; Mammalia; Primates; Hominidae; Pan; Pan troglodytes	Pan troglodytes troglodytes	96.5	99	Pan troglodytes troglodytes	yes
+ASV_704	473	Eukaryota; Metazoa; Chordata; Amphibia; Anura; Hylidae	Hyla orientalis	95.3	97	Hyla molleri; Hyla orientalis	no
+ASV_533	403	Eukaryota; Metazoa; Chordata; Mammalia; Lagomorpha; Leporidae; Lepus	Lepus europaeus	100.0	100	Lepus europaeus	yes
+ASV_576	363	Eukaryota; Metazoa; Chordata; Mammalia; Rodentia; Cricetidae	Neodon bershulaensis	99.3	100	Neodon bershulaensis; Neodon bomiensis; Neodon clarkei	no
+ASV_1399	326	Eukaryota; Metazoa	Paracoccaceae bacterium	98.6	29	Paracoccaceae bacterium; Saccharospirillaceae bacterium; bacterium	no
+ASV_596	303	Eukaryota; Metazoa; Chordata; Actinopteri; Gobiiformes; Gobiidae; Ponticola; Ponticola kessleri	Ponticola kessleri	100.0	100	Ponticola kessleri	yes
+ASV_662	269	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Bovidae; Bubalus; Bubalus bubalis	Bubalus bubalis	100.0	100	Bubalus bubalis	yes
+ASV_864	169	Eukaryota; Metazoa; Chordata; Aves; Galliformes; Phasianidae; Meleagris; Meleagris gallopavo	Meleagris gallopavo	100.0	100	Meleagris gallopavo	yes
+ASV_879	156	Eukaryota; Metazoa; Chordata; Mammalia; Carnivora; Ursidae; Ursus	Ursus arctos	100.0	100	Ursus arctos	yes
+ASV_900	147	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Acheilognathidae	Rhodeus amarus	95.8	101	Rhodeus amarus; Rhodeus sericeus	no
+ASV_1073	125	Eukaryota; Metazoa; Chordata; Mammalia; Rodentia; Muridae	Apodemus hermonensis	100.0	100	Apodemus hermonensis	no
+ASV_1582	87	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Leuciscidae	Alburnus alburnus	96.5	100	Alburnoides bipunctatus; Alburnus alburnus; Alburnus arborella	no
+ASV_1481	79	Eukaryota; Metazoa; Chordata; Mammalia; Lagomorpha; Leporidae	Lepus europaeus	97.9	100	Lepus europaeus	no
+ASV_1317	79	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Cervidae	Capreolus capreolus	97.2	100	Capreolus capreolus	no
+ASV_1361	74	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Phylloscopidae; Phylloscopus	Alaudala cheleensis	97.2	100	Alaudala cheleensis; Eremophila alpestris; Lullula arborea; Orthotomus sutorius	no
+ASV_1652	74	Eukaryota; Metazoa; Chordata; Mammalia; Artiodactyla; Suidae; Sus	Sus scrofa	97.2	100	Sus scrofa	yes
+ASV_1604	65	Eukaryota; Metazoa; Chordata; Mammalia; Rodentia	Apodemus sylvaticus	97.9	100	Apodemus alpicola; Apodemus flavicollis; Apodemus sylvaticus	no
+ASV_3007	57	Eukaryota; Metazoa; Chordata; Actinopteri; Cypriniformes; Gobionidae; Pseudorasbora	Pseudorasbora parva	94.4	100	Pseudorasbora parva	yes
+ASV_1585	47	Eukaryota; Metazoa; Chordata; Aves; Galliformes	Gallus gallus	93.1	104	Gallus gallus	no
+ASV_2313	41	Eukaryota; Metazoa; Chordata; Actinopteri; Perciformes; Percidae	Sander lucioperca	97.9	100	Perca fluviatilis; Sander lucioperca	no
+ASV_2422	31	Eukaryota; Metazoa; Chordata; Aves; Anseriformes; Anatidae; Tadorna; Tadorna tadorna	Tadorna variegata	97.2	102	Tadorna ferruginea; Tadorna sp. LShepherd-2024a; Tadorna tadorna; Tadorna tadornoides; Tadorna variegata	yes
+ASV_1947	31	Eukaryota; Metazoa; Chordata; Actinopteri; Esociformes	Esox masquinongy	98.6	100	Esox masquinongy	no
+ASV_1919	30	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Sylviidae; Curruca; Curruca melanocephala	Curruca communis	100.0	99	Curruca cantillans; Curruca communis; Curruca melanocephala	yes
+ASV_1894	29	Eukaryota; Metazoa; Chordata; Testudines; Geoemydidae	Emys orbicularis	94.5	101	Emys orbicularis; Terrapene carolina	no
+ASV_3458	28	Eukaryota; Metazoa; Chordata; Aves; Galliformes; Phasianidae; Alectoris; Alectoris rufa	Chrysococcyx minutillus minutillus	100.0	99	Anser brachyrhynchus; Ardea alba modesta; Arenaria melanocephala; Chrysococcyx minutillus minutillus; Chrysococcyx russatus; Gavia stellata; Neodrepanis hypoxantha; Numida meleagris; Scolopax celebensis	no
+ASV_2398	21	Eukaryota; Metazoa; Chordata; Mammalia; Chiroptera; Vespertilionidae; Myotis	Myotis muricola	100.0	100	Myotis atacamensis; Myotis horsfieldii; Myotis muricola; Myotis mystacinus; Myotis welwitschii	yes
+ASV_2325	20	Eukaryota; Metazoa; Chordata; Aves; Galliformes; Phasianidae; Gallus	Gallus gallus	96.6	100	Gallus gallus	yes
+ASV_3630	17	Eukaryota; Metazoa; Chordata; Amphibia; Caudata; Salamandridae	Lissotriton vulgaris	99.2	100	Lissotriton vulgaris	no
+ASV_2774	16	Eukaryota; Metazoa; Chordata; Actinopteri; Perciformes	Sander lucioperca	98.9	89	Perca flavescens; Perca fluviatilis; Sander lucioperca	no
+ASV_2819	15	Eukaryota; Metazoa; Chordata; Mammalia; Rodentia; Muridae; Mus	Apodemus hermonensis	98.6	100	Apodemus hermonensis	no
+ASV_3362	14	Eukaryota; Metazoa; Chordata; Aves; Pelecaniformes; Ardeidae; Ardea	Ardea purpurea	95.8	101	Ardea purpurea	yes
+ASV_3345	14	Eukaryota; Metazoa; Chordata; Aves; Passeriformes; Phylloscopidae	Schistolais leontica	93.1	101	Helopsaltes ochotensis; Helopsaltes pleskei; Phylloscopus burkii; Schistolais leontica; Schistolais leucopogon	no
+ASV_3431	12	Eukaryota; Metazoa; Chordata; Aves; Columbiformes; Columbidae; Columba	Streptopelia decaocto	97.2	101	Columba livia; Columba rupestris; Streptopelia decaocto; Streptopelia decaocto decaocto	yes

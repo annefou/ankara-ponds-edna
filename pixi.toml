@@ -1,0 +1,11 @@
+[workspace]
+name = "ankara-ponds-edna"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[dependencies]
+apptainer = ">=1.4"
+nextflow = ">=25.04"
+python = "3.12.*"
+matplotlib = ">=3.11.2,<4"
+pandas = ">=3.1.0,<4"
