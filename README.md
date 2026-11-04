@@ -1,5 +1,7 @@
 # ankara-ponds-edna (prototype)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942473.svg)](https://doi.org/10.5281/zenodo.23942473)
+
 Test of LifeWatch ERIC's metabarcoding pipeline PEMA on public eDNA data from Türkiye: 93 runs (29 ponds, 6 sites west of
 Ankara, May–June 2022, 12S-V5 vertebrate marker) sampled by METU (Beklioğlu, Avcı) for PONDERFUL
 (Cuenca-Cambronero et al. 2026, *Nature Ecology & Evolution*, doi:10.1038/s41559-026-03197-w; reads ENA PRJNA1495761).

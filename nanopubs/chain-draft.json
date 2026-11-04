@@ -4,7 +4,7 @@
   "chain_shape": "paper-rooted",
   "source": {
     "repository": "https://github.com/annefou/ankara-ponds-edna",
-    "commit": "76d593ffdc8a62cef7f57a668313b49dded06251",
+    "commit": "904e2ea71561d97b63c628abcf6656851b55fa16",
     "figure": "figures/ponds_edna_map.png"
   },
   "steps": [
@@ -130,10 +130,14 @@
       "template_key": "FORRT_REPLICATION_OUTCOME",
       "template_uri": "https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE",
       "prefill": {
-        "outcome": "annefou-ankara-ponds-edna-outcome"
+        "outcome": "annefou-ankara-ponds-edna-outcome",
+        "repo": "https://doi.org/10.5281/zenodo.23942474",
+        "date": "2026-11-04"
       },
       "provenance": {
-        "outcome": "derived (<org>-<repo>-<step>)"
+        "outcome": "derived (<org>-<repo>-<step>)",
+        "repo": "CITATION.cff",
+        "date": "CITATION.cff"
       },
       "manual": [
         "validationStatus",
