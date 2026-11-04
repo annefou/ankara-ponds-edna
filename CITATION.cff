@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "ankara-ponds-edna"
+message: "If you use this software, please cite it as below, and cite the data: Cuenca-Cambronero et al. 2026, Nature Ecology & Evolution, doi:10.1038/s41559-026-03197-w (reads ENA PRJNA1495761)."
+type: software
+abstract: "Prototype: LifeWatch ERIC's metabarcoding pipeline PEMA v3.0.0 (12S) on the public PONDERFUL eDNA reads of 29 ponds west of Ankara, Türkiye, with an NCBI BLAST check and a per-pond summary."
+authors:
+  - family-names: "Fouilloux"
+    given-names: "Anne"
+    orcid: "https://orcid.org/0000-0002-1784-2920"
+    affiliation: "LifeWatch ERIC"
+repository-code: "https://github.com/annefou/ankara-ponds-edna"
+license: MIT
+version: "0.1.0"
+keywords:
+  - eDNA
+  - metabarcoding
+  - PEMA
+  - 12S
+  - ponds
+  - Türkiye
+  - LifeWatch ERIC
+references:
+  - type: article
+    title: "PONDERFUL pond eDNA (Nature Ecology & Evolution 2026)"
+    doi: "10.1038/s41559-026-03197-w"
+    authors:
+      - family-names: "Cuenca-Cambronero"

@@ -1,0 +1,29 @@
+version: 1
+project:
+  title: "ankara-ponds-edna"
+  authors:
+    - name: "Anne Fouilloux"
+      orcid: "https://orcid.org/0000-0002-1784-2920"
+      affiliations:
+        - "LifeWatch ERIC"
+  github: https://github.com/annefou/ankara-ponds-edna
+  license: MIT
+  exclude:
+    - pema/**
+    - trident/**
+    - rdp_databases/**
+    - reads_all/**
+    - reads_test/**
+    - work_all/**
+    - work_test/**
+    - results_all/**
+    - results_test/**
+  toc:
+    - file: index.md
+    - file: notebooks/01_data_download.ipynb
+    - file: notebooks/02_data_clean.ipynb
+    - file: notebooks/03_analysis.ipynb
+    - file: notebooks/04_figures.ipynb
+site:
+  title: "Ankara ponds eDNA (prototype)"
+# Do NOT set base_url here (MyST ignores it); BASE_URL is set in .github/workflows/jupyter-book.yml.

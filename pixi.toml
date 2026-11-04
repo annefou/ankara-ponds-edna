@@ -9,3 +9,18 @@ nextflow = ">=25.04"
 python = "3.12.*"
 matplotlib = ">=3.11.2,<4"
 pandas = ">=3.1.0,<4"
+jupytext = "*"
+jupyterlab = "*"
+nbclient = "*"
+ipykernel = "*"
+
+[feature.docs.dependencies]
+mystmd = "*"
+
+[environments]
+default = { solve-group = "default" }
+docs = { features = ["docs"], solve-group = "default" }
+
+[tasks]
+pond-summary = "python scripts/pond_summary.py"
+book = "jupytext --to notebook notebooks/*.py && jupyter execute --inplace notebooks/*.ipynb"

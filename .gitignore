@@ -22,3 +22,6 @@ results_all/*
 .writetest
 START_FULL_RUN.txt
 clean_old_claude_scratch.sh
+_build/
+notebooks/*.ipynb
+notebooks/.ipynb_checkpoints/

@@ -6,6 +6,10 @@ Ankara, May–June 2022, 12S-V5 vertebrate marker) sampled by METU (Beklioğlu, 
 Our analysis of public data, open to correction by the METU team. The field observations of the same ponds are restricted until
 15 January 2027.
 
+Site: <https://annefou.github.io/ankara-ponds-edna/> (pages read the committed tables; nothing is rerun).
+Container: `docker run --rm ghcr.io/annefou/ankara-ponds-edna:latest` rebuilds the pond table and map from the
+committed PEMA and BLAST tables (PEMA itself needs Nextflow and Podman on the host).
+
 ## Steps
 
 1. `run_pema_all.sh` (started with `start_full_run.sh`): downloads the 93 runs from ENA (MD5-checked, retries on 403)
