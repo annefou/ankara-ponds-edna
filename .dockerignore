@@ -1,0 +1,17 @@
+# Local folders that must not go into the image (reads, PEMA, databases, environments)
+.pixi/
+.git/
+reads_all/
+reads_test/
+work_all/
+work_test/
+work_osm/
+pema/
+trident/
+rdp_databases/
+results_test/
+_build/
+.snakemake/
+**/__pycache__/
+*.log
+paper/
