@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "kind": "forrt-chain-draft",
+  "chain_shape": "paper-rooted",
+  "source": {
+    "repository": "https://github.com/annefou/ankara-ponds-edna",
+    "commit": "76d593ffdc8a62cef7f57a668313b49dded06251",
+    "figure": "figures/ponds_edna_map.png"
+  },
+  "steps": [
+    {
+      "step": "01_quote",
+      "template_key": "ANNOTATE_QUOTATION",
+      "template_uri": "https://w3id.org/np/RA24onqmqTMsraJ7ypYFOuckmNWpo4Zv5gsLqhXt7xYPU",
+      "prefill": {
+        "paper": "10.1038/s41559-026-03197-w",
+        "quotation": "For amphibian taxonomy, species were identified using",
+        "quotation-end": "zooplankton, 148 genera of macroinvertebrates and 39 species of amphibians.",
+        "comment": "The amphibian richness that enters the paper's biodiversity index, and the fish presence used as a model factor (Methods: \"fish presence was determined using eDNA metabarcoding\"), come from eDNA metabarcoding of pond water. The reads are public (ENA PRJNA1495761), so the detections can be re-derived independently. This chain re-derives them for the 29 ponds in Türkiye with LifeWatch ERIC's PEMA pipeline and an NCBI BLAST check, as a test of how far the species list depends on the bioinformatic pipeline and its reference database."
+      },
+      "provenance": {
+        "paper": "nanopubs/drafts/01_quote.md",
+        "quotation": "nanopubs/drafts/01_quote.md",
+        "quotation-end": "nanopubs/drafts/01_quote.md",
+        "comment": "nanopubs/drafts/01_quote.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "02_aida",
+      "template_key": "AIDA_SENTENCE",
+      "template_uri": "https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA",
+      "prefill": {
+        "aida": "The amphibian species living in a pond and the presence of fish can be identified from the DNA in its water.",
+        "topic": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q25098939",
+            "label": "environmental DNA"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q51237016",
+            "label": "metabarcoding"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q10908",
+            "label": "Amphibia"
+          }
+        ],
+        "st3": [
+          {
+            "dataset": "https://doi.org/10.5281/zenodo.20934064"
+          }
+        ]
+      },
+      "provenance": {
+        "aida": "nanopubs/drafts/02_aida.md",
+        "topic": "nanopubs/drafts/02_aida.md + Wikidata",
+        "st3": "nanopubs/drafts/02_aida.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "03_claim",
+      "template_key": "FORRT_CLAIM",
+      "template_uri": "https://w3id.org/np/RAZWyM8D16ya3S1zhCvrG1f0iSpd9-8onVWp0FTvvX7LQ",
+      "prefill": {
+        "claim": "ponderful-edna-amphibian-fish-detections-claim",
+        "label": "Amphibian species and fish presence in PONDERFUL ponds identified by eDNA metabarcoding (Cuenca-Cambronero et al. 2026)",
+        "forrtType": "https://w3id.org/sciencelive/o/terms/descriptive_pattern-FORRT-Claim",
+        "source": "https://doi.org/10.1038/s41559-026-03197-w"
+      },
+      "provenance": {
+        "claim": "nanopubs/drafts/03_claim.md",
+        "label": "nanopubs/drafts/03_claim.md",
+        "forrtType": "nanopubs/drafts/03_claim.md",
+        "source": "nanopubs/drafts/03_claim.md"
+      },
+      "manual": [
+        "forrtType"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "04_study",
+      "template_key": "FORRT_REPLICATION",
+      "template_uri": "https://w3id.org/np/RAuLEjPp-4dTvPwMkfHggTto1CgjIftiGRAgHlyeEonjQ",
+      "prefill": {
+        "study": "ponderful-turkiye-edna-pema-replication-study",
+        "label": "Independent re-analysis of the PONDERFUL eDNA reads of 29 ponds in Türkiye with PEMA and an NCBI BLAST check",
+        "type": "https://w3id.org/sciencelive/o/terms/Replication-Study",
+        "scope": "The eDNA detections of amphibians and fish in the 29 ponds sampled in Türkiye (six sites west of Ankara, May-June 2022): which amphibian taxa are found in each pond and whether fish are present. In scope: the list of taxa per pond, the number of ponds with fish, and the taxa the reference database misses. Out of scope: the other five countries, macrophytes, zooplankton and macroinvertebrates, the ecosystem functions and the biodiversity-multifunctionality models.",
+        "methodology": "The 93 public runs of the 29 Turkish ponds (ENA PRJNA1495761, 12S vertebrate marker, paired-end Illumina, three runs per pond, six for two ponds) are downloaded with MD5 checks and processed with LifeWatch ERIC's PEMA v3.0.0 (Nextflow, rootless Podman): quality trimming, Swarm clustering into ASVs and taxonomy with the RDP classifier on PEMA's 12S_v200 reference (3,851 ASVs, 70.3 million reads). The most abundant ASV of each assigned taxon and the 10 most abundant unresolved ASVs (101 in all) are checked against NCBI core_nt with megablast; a BLAST hit replaces PEMA's label at 97% identity or more over 95% of the sequence. A taxon is present in a pond when its replicate runs together hold at least 10 reads and 0.01% of the pond's reads. Amphibians are grouped at the genus level that 12S resolves.",
+        "deviation": "A different bioinformatic pipeline and reference database from the paper's (INBO eDNA laboratories; details in the paper's supplementary methods, not read); primers left in the reads; a fixed read threshold for presence; amphibians resolved to genus where 12S cannot separate species (Anatolian water frogs); only the Turkish ponds.",
+        "keywordSelection": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q25098939",
+            "label": "environmental DNA"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q51237016",
+            "label": "metabarcoding"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q10908",
+            "label": "Amphibia"
+          }
+        ],
+        "disciplineSelection": {
+          "uri": "http://www.wikidata.org/entity/Q7150",
+          "label": "ecology"
+        }
+      },
+      "provenance": {
+        "study": "nanopubs/drafts/04_study.md",
+        "label": "nanopubs/drafts/04_study.md",
+        "type": "nanopubs/drafts/04_study.md",
+        "scope": "nanopubs/drafts/04_study.md",
+        "methodology": "nanopubs/drafts/04_study.md",
+        "deviation": "nanopubs/drafts/04_study.md",
+        "keywordSelection": "nanopubs/drafts/04_study.md + Wikidata",
+        "disciplineSelection": "nanopubs/drafts/04_study.md + Wikidata"
+      },
+      "manual": [
+        "type"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "05_outcome",
+      "template_key": "FORRT_REPLICATION_OUTCOME",
+      "template_uri": "https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE",
+      "prefill": {
+        "outcome": "annefou-ankara-ponds-edna-outcome"
+      },
+      "provenance": {
+        "outcome": "derived (<org>-<repo>-<step>)"
+      },
+      "manual": [
+        "validationStatus",
+        "confidenceLevel"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "06_citation",
+      "template_key": "CITATION_CITO",
+      "template_uri": "https://w3id.org/np/RA43F9EoOuzF0xoNUnCMNyFsfIqlsuWDdPHCnN0wCdCAw",
+      "prefill": {
+        "st02": [
+          {
+            "cited": "https://doi.org/10.1038/s41559-026-03197-w"
+          }
+        ]
+      },
+      "provenance": {
+        "st02": "cites = validation status (see 05_outcome); cited = nanopubs/drafts/06_citation.md"
+      },
+      "published_uri": null
+    }
+  ],
+  "carry_forward": [
+    {
+      "from": "01_quote",
+      "into": "02_aida",
+      "field": "project"
+    },
+    {
+      "from": "02_aida",
+      "into": "03_claim",
+      "field": "aida"
+    },
+    {
+      "from": "03_claim",
+      "into": "04_study",
+      "field": "claim"
+    },
+    {
+      "from": "04_study",
+      "into": "05_outcome",
+      "field": "study"
+    },
+    {
+      "from": "05_outcome",
+      "into": "06_citation",
+      "field": "work"
+    }
+  ]
+}

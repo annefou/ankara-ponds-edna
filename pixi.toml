@@ -10,6 +10,7 @@ python = "3.12.*"
 matplotlib = ">=3.11.2,<4"
 pandas = ">=3.1.0,<4"
 snakemake-minimal = ">=8"
+"ruamel.yaml" = "*"            # scripts/build_chain_draft.py reads CITATION.cff
 jupytext = "*"
 jupyterlab = "*"
 nbclient = "*"
@@ -25,4 +26,5 @@ docs = { features = ["docs"], solve-group = "default" }
 [tasks]
 summary = "snakemake --cores 1 summary --forcerun pond_summary"   # pond table and map from the committed PEMA and BLAST tables
 pema-test = "bash run_pema_test.sh"
+build-chain-draft = "python scripts/build_chain_draft.py"
 book = "jupytext --to notebook notebooks/*.py && jupyter execute --inplace notebooks/*.ipynb"

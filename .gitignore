@@ -25,3 +25,4 @@ clean_old_claude_scratch.sh
 _build/
 notebooks/*.ipynb
 notebooks/.ipynb_checkpoints/
+paper/

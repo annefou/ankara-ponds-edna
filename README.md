@@ -27,6 +27,13 @@ Site: <https://annefou.github.io/ankara-ponds-edna/>. Installation and running: 
 - Ponds without fish: 3.7 amphibian groups on average; with fish: 2.7.
 - Human DNA 20 % of reads (handling); livestock above 1 % of non-human reads in 8 ponds.
 
+## Nanopublication chain (draft)
+
+A FORRT chain is drafted in `nanopubs/drafts/` (`nanopubs/chain-draft.json`, `pixi run build-chain-draft`): the
+claim that amphibian species and fish presence in the PONDERFUL ponds were identified by eDNA metabarcoding, and
+this re-analysis with PEMA as the replication study. The Outcome waits for the paper's per-pond detections, restricted
+until 15 January 2027; nothing is published yet. Geographical coverage: `nanopubs/drafts/09_geo_coverage.md`.
+
 ## Install and run
 
 You can read the results without installing anything: the PEMA tables are in `results_all/`, the BLAST check and the
