@@ -142,7 +142,7 @@ ax[1].set_xticks([0, 1], [f"no fish (n={len(data[0])})", f"fish (n={len(data[1])
 ax[1].set_ylabel("Amphibian groups detected per pond")
 ax[1].set_title("Amphibians and fish", fontsize=10)
 fig.text(0.01, 0.01, "Data: PONDERFUL eDNA reads, ENA PRJNA1495761 (METU, Cuenca-Cambronero et al. 2026); "
-         "analysis: PEMA v3.0.0 + NCBI BLAST check. Internal prototype.", fontsize=6.5, color="0.4")
+         "analysis: PEMA v3.0.0 + NCBI BLAST check. Prototype, open to correction.", fontsize=6.5, color="0.4")
 fig.tight_layout(rect=(0, 0.03, 1, 1))
 fig.savefig("figures/ponds_edna_map.png", dpi=180)
 print("written analysis/pond_table.tsv, figures/ponds_edna_map.png")
