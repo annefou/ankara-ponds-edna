@@ -1,12 +1,13 @@
 # The parameters file of PEMA (https://github.com/hariszaf/pema).
 # Copy it, fill it in, and run:   nextflow run pema.nf --params-file my_analysis.yaml
+# Paths start with __REPO__; run_pema_*.sh replace it with this repository's folder (in work_*/params.yaml).
 # A parameter left empty is not passed to its tool, so the tool's own default applies.
 
 # Folder with the paired-end fastq files (.fastq, .fastq.gz, .fq, .fq.gz). The two files of a sample are
 # recognised by a _1/_2 or _R1/_R2 in their names (e.g. S1_1.fastq.gz, S1_S1_L001_R1_001.fastq.gz);
 # the part before it is the sample name.
 # e.g. sanity_check/16S/mydata16s, the 16S samples of the sanity check (sanity_check/run_sanity_check.sh 16S downloads them).
-raw_reads: /opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna/reads_test
+raw_reads: __REPO__/reads_test
 
 # values from: ["16S", "18S", "12S", "COI", "ITS"]
 # For ITS, the primers are removed with cutadapt (see the cutadapt section) before fastp.
@@ -15,7 +16,7 @@ marker_gene: 12S
 threads: 8
 
 # Output folder
-outdir: /opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna/results_test
+outdir: __REPO__/results_test
 
 # values from: ["swarm", "vsearch", "dada2"]
 # swarm: ASVs with Swarm; vsearch: OTUs with VSEARCH; dada2: ASVs with DADA2 (fastp then filters the read pairs without merging them)
@@ -299,7 +300,7 @@ rdp:
 
   # Folder that contains the RDP-trained databases; downloaded and trained databases are saved here.
   # (Optional when `database` is a full path.)
-  databases_dir: /opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna/rdp_databases
+  databases_dir: __REPO__/rdp_databases
 
   # Where the PEMA-trained databases are downloaded from: <download_url>/<database>.tar.gz
   download_url: https://zenodo.org/records/23298141/files

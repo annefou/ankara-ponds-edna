@@ -9,7 +9,7 @@ COPY pixi.toml pixi.lock /app/
 RUN pixi install --locked
 COPY . /app
 
-# Rebuilds analysis/pond_table.tsv and figures/ponds_edna_map.png from the committed PEMA and BLAST tables.
+# `pixi run summary` (Snakemake target `summary`) rebuilds analysis/pond_table.tsv and figures/ponds_edna_map.png from the committed PEMA and BLAST tables.
 # PEMA itself runs in its own container (hariszaf/pema v3.0.0) through Nextflow and rootless Podman on the
 # host: see run_pema_all.sh and the README.
-CMD ["pixi", "run", "pond-summary"]
+CMD ["pixi", "run", "summary"]

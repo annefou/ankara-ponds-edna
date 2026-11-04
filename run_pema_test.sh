@@ -5,11 +5,13 @@
 # unpacked in rdp_databases/). Containers are pulled by Nextflow with rootless Podman.
 # Output: results_test/ (main table: rdp_assignment/tax_assigned_table.tsv); log: test_run.log.
 set -euo pipefail
-cd /opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna/pema
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this repository
+mkdir -p "$D/work_test" && sed "s|__REPO__|$D|g" "$D/pema_test.yaml" > "$D/work_test/params.yaml"
+cd "$D/pema"
 pixi run --manifest-path ../pixi.toml nextflow run pema.nf \
-  --params-file ../pema_test.yaml \
+  --params-file ../work_test/params.yaml \
   -profile podman,reports \
   -c ../podman.config \
   -work-dir ../work_test \
   -resume 2>&1 | tee ../test_run.log
-df -h /opt | tail -1
+df -h "$D" | tail -1

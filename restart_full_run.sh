@@ -3,8 +3,8 @@
 #    touched the terminal). Matches only processes whose command line contains run_pema_all.sh or pema_all.yaml.
 # 2. Restarts it detached (start_full_run.sh): missing runs are downloaded with pauses (ENA 403s), finished
 #    downloads are kept, PEMA resumes.
-D=/opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna
-PIDS=$(pgrep -f "$D/run_pema_all.sh|pema_all.yaml" | grep -v "^$$\$" || true)
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this repository
+PIDS=$(pgrep -f "$D/run_pema_all.sh|work_all/params.yaml" | grep -v "^$$\$" || true)
 if [ -n "$PIDS" ]; then
   echo "Stopping: $PIDS"
   kill -CONT $PIDS 2>/dev/null; kill -TERM $PIDS 2>/dev/null

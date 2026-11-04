@@ -6,10 +6,14 @@
 # 1. downloads the reads (about 4.4 GB) into reads_all/, skipping files already there and checking each file's MD5;
 # 2. runs PEMA; output in results_all/ (main table rdp_assignment/tax_assigned_table.tsv); log in all_run.log.
 # Safe to run again: downloads skip finished files and Nextflow resumes finished steps.
+# Usage: bash run_pema_all.sh [all|download|pema]   (Snakefile calls the two stages separately)
 set -euo pipefail
-cd /opt/vth/OpenAIRE_Alien_AI_Hackathon/ankara-ponds-edna
-df -h /opt | tail -1
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this repository
+cd "$D"
+STAGE="${1:-all}"
+df -h "$D" | tail -1
 
+if [ "$STAGE" != pema ]; then
 python3 -I - <<'EOF'
 import csv, hashlib, json, os, time, urllib.request
 os.makedirs("reads_all", exist_ok=True)
@@ -68,14 +72,18 @@ with open("reads_all/runs_turkey.tsv", "w") as f:
     for r in runs:
         w.writerow([r["sample_alias"], r["run_accession"], r["country"]])
 EOF
-df -h /opt | tail -1
+fi
+df -h "$D" | tail -1
 
+if [ "$STAGE" != download ]; then
+mkdir -p work_all && sed "s|__REPO__|$D|g" pema_all.yaml > work_all/params.yaml
 cd pema
 pixi run --manifest-path ../pixi.toml nextflow -log ../work_all.nextflow.log run pema.nf \
   -ansi-log false \
-  --params-file ../pema_all.yaml \
+  --params-file ../work_all/params.yaml \
   -profile podman,reports \
   -c ../podman.config \
   -work-dir ../work_all \
   -resume 2>&1 | tee ../all_run.log
-df -h /opt | tail -1
+df -h "$D" | tail -1
+fi

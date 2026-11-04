@@ -9,6 +9,7 @@ nextflow = ">=25.04"
 python = "3.12.*"
 matplotlib = ">=3.11.2,<4"
 pandas = ">=3.1.0,<4"
+snakemake-minimal = ">=8"
 jupytext = "*"
 jupyterlab = "*"
 nbclient = "*"
@@ -22,5 +23,6 @@ default = { solve-group = "default" }
 docs = { features = ["docs"], solve-group = "default" }
 
 [tasks]
-pond-summary = "python scripts/pond_summary.py"
+summary = "snakemake --cores 1 summary --forcerun pond_summary"   # pond table and map from the committed PEMA and BLAST tables
+pema-test = "bash run_pema_test.sh"
 book = "jupytext --to notebook notebooks/*.py && jupyter execute --inplace notebooks/*.ipynb"
